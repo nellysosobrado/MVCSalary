@@ -62,7 +62,7 @@ namespace MVCSalary.Tests.Services
             Assert.AreEqual(expected, result);
         }
         [TestMethod]
-        public void Under30Richard_Should_Get_110kr_Per_Hour()
+        public void Under30Nelly_Should_Get_110kr_Per_Hour()
         {
             // ARRANGE
             var empName = "Nelly";
@@ -73,6 +73,35 @@ namespace MVCSalary.Tests.Services
             // ACT
             var result = sut.Calculate(empName, empAge, empHours);
 
+            // ASSERT
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+
+        public void  Between30_50Nelly_Should_Get_132kr_Per_Hour()
+        {
+            // ARRANGE
+            var empName = "Nelly";
+            var empAge = 31;
+            var empHours = 10;
+            var expected = 1320;
+            // ACT
+            var result = sut.Calculate(empName, empAge, empHours);
+            // ASSERT
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void Over_50Nelly_Should_Get_143kr_Per_Hour()
+        {
+            // ARRANGE
+            var empName = "Nelly";
+            var empAge = 51;
+            var empHours = 10;
+            var expected = 1430;
+            // ACT
+            var result = sut.Calculate(empName, empAge, empHours);
             // ASSERT
             Assert.AreEqual(expected, result);
         }
