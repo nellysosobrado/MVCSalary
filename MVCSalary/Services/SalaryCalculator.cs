@@ -2,32 +2,24 @@
 {
     public class SalaryCalculator : ISalaryCalculator
     {
-        public double Calculate(string name, int age, int totalHours)
+        public decimal Calculate(string name, decimal age, decimal totalHours)
         {
-            double salaryPerhour = 0;
+            decimal salaryPerHour = 0;
 
-            if (age<30)
-            {
-                salaryPerhour = 100;
-            }
-            else if (age >=30 && age <=50)
-            {
-                salaryPerhour = 120;
-                
-            }
+            if (age < 30)
+                salaryPerHour = 100;
+            else if (age <= 50)
+                salaryPerHour = 120;
             else
-            {
-                salaryPerhour = 130;
+                salaryPerHour = 130;
 
-                
-            }
-            if (name == "Nelly")
-            {
-                salaryPerhour = salaryPerhour * 1.1;
-            }
-            return salaryPerhour * totalHours;
+            if (name.Equals("Nelly", StringComparison.OrdinalIgnoreCase))
+                salaryPerHour *= 1.1m;
 
+            return salaryPerHour * totalHours;
         }
+
+
 
     }
 }

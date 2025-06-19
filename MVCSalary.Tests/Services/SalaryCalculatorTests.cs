@@ -61,6 +61,23 @@ namespace MVCSalary.Tests.Services
             // ASSERT
             Assert.AreEqual(expected, result);
         }
+        [TestMethod]
+        public void Under30Richard_Should_Get_110kr_Per_Hour()
+        {
+            // ARRANGE
+            var empName = "Nelly";
+            var empAge = 29;
+            var empHours = 10;
+            var expected = 1100;
+
+            // ACT
+            var result = sut.Calculate(empName, empAge, empHours);
+
+            // ASSERT
+            Assert.AreEqual(expected, result);
+        }
+
+
 
 
     }

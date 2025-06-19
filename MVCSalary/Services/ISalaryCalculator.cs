@@ -2,10 +2,10 @@
 {
     public interface ISalaryCalculator
     {
-        double Calculate(
+        decimal Calculate(
             string name,
-            int age,
-            int totalHours
+            decimal age,
+            decimal totalHours
             
             );
     }
