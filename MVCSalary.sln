@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36127.28 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSalary", "MVCSalary\MVCSalary.csproj", "{01A212A2-48A7-403C-A94C-18389FD47C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSalary.Tests", "MVCSalary.Tests\MVCSalary.Tests.csproj", "{4E5A5E6F-BF2F-4F4E-AF36-1089D94C1774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{01A212A2-48A7-403C-A94C-18389FD47C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01A212A2-48A7-403C-A94C-18389FD47C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01A212A2-48A7-403C-A94C-18389FD47C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5A5E6F-BF2F-4F4E-AF36-1089D94C1774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5A5E6F-BF2F-4F4E-AF36-1089D94C1774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5A5E6F-BF2F-4F4E-AF36-1089D94C1774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5A5E6F-BF2F-4F4E-AF36-1089D94C1774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
